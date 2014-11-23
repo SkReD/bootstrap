@@ -98,11 +98,11 @@ module.exports = function (grunt) {
       },
       bootstrap: {
         src: [
-          'js/transition.js',
-          'js/offcanvas.js',
-          'js/rowlink.js',
-          'js/inputmask.js',
-          'js/fileinput.js'
+          //'js/transition.js',
+          //'js/offcanvas.js',
+          //'js/rowlink.js',
+          'js/inputmask.js'
+          //'js/fileinput.js'
         ],
         dest: 'dist/js/<%= pkg.name %>.js'
       }
@@ -374,7 +374,7 @@ module.exports = function (grunt) {
 
   // Documentation task.
   grunt.registerTask('docs', ['jekyll', 'dist-docs']);
-  
+
   // Version numbering task.
   // grunt change-version-number --oldver=A.B.C --newver=X.Y.Z
   // This can be overzealous, so its changes should always be manually reviewed!
